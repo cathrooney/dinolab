@@ -1,0 +1,160 @@
+// Place all the styles related to the Dinolines controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#middle_dinoline {
+	margin: 0px 0px 0px 10px;
+
+	background-color: rgba(80,89,58,1);
+}
+
+.timeline {
+	margin-top: 0px;
+	background-color: rgba(80,89,58,1);
+}
+
+.all_eras {
+	height: 570px;
+
+	font-weight: bold;
+	color: rgba(80,89,58,1);
+
+	background-image: url(tyrannosaurus.png);
+	background-size: 700px 570px;
+	background-repeat: no-repeat;
+	background-color: rgba(80,89,58,0);
+}
+
+.triassic_era, .jurassic_era, .cretaceous_era {
+	height: 190px;
+	z-index: -10;
+}
+
+.triassic_era {
+	background-color: rgba(233,233,233,.5);
+}
+
+.jurassic_era {
+	background-color: rgba(188,188,188,.5);
+}
+
+.cretaceous_era {
+	background-color: rgba(50,153,187,.5);
+}
+
+.triassic, .jurassic, .cretaceous {
+	float: right;
+	position: relative;
+	top: 145px;
+	padding-right: 10px;
+}
+
+.cretaceous {
+	top: 125px;	
+}
+
+.mesozoic {
+	font-weight: bold;
+
+	background-color: rgba(80,89,58,1);
+	padding: 10px 10px;
+}
+
+.stego, .tyranno, .tricero, .plateo {
+	width: 120px;
+	padding: 2px;
+	background-color: rgba(255,194,15,1);  /* yellow */
+	color: rgba(80,89,58,1); /* olive green */
+
+	border-radius: 10px;
+	text-align: center
+}
+
+.plateo, .tyranno {
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+
+.stego, .tricero {
+	position: relative;
+	top: 50px;
+	left: 5px;
+}
+
+.timeline .audio_trigger a {
+	color: rgba(80,89,58,1); /* olive green */
+	text-decoration: none;
+}
+
+#lightbox_dino {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top: 0px;
+    margin: 0 auto;
+
+   	width: 960px;
+   	height: 100%;
+	background: rgba(0,0,0,.7);
+    text-align:center;
+}
+
+#lightbox_dino span {
+	color:#fff; 
+    font-size:12px;
+}
+
+#lightbox_dino img {
+	width: 100%;
+	height: 80%;
+
+	margin-top: 5px;
+
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#lightbox_dino .dino_popup {
+	width: 480px;
+	margin: 0px auto;
+}
+
+#lightbox_dino .dino_header {
+	width: 480px;
+	margin: 0px auto;
+
+	padding: 10px 0px;
+}
+
+.dino_popup .dino_name {
+	width: 50%;
+	float:left;
+	text-align: left;
+}
+
+.dino_popup .dino_found {
+	width: 50%;
+	float:left;
+	text-align: right;
+}
+
+#lightbox_dino .dino_desc {
+	padding: 10px 0px;
+}
+
+#lightbox_dino .dino_desc p {
+	color:#fff;
+    font-size:12px;
+}
+
+#lightbox_dino .close a {
+	color:#fff;
+    font-size:12px;
+
+	text-decoration: underline;
+}
+
+#lightbox_dino .close {
+	text-align: right;
+}

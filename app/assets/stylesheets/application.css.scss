@@ -1,0 +1,249 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require 960_12_col
+ *= require reset
+ *= require text
+ *= require_self
+ *= require home
+ *= require_tree
+*/
+
+/* Variables */
+
+$dino_green: rgba(80,89,58,1);
+$dino_yellow: rgba(255,194,15,1);
+$dino_ecru: rgba(248,244,228,1);
+
+/*****************************/	
+/*  Font families            */
+/*****************************/	
+
+@font-face {
+  font-family: 'rainforest';
+  src: asset-url('rainforest_rg.otf', font) format('opentype');
+}
+
+/*****************************/	
+/* 1. Body                   */
+/*****************************/	
+body {
+	width: 960px;
+	margin: 0 auto;
+	color: $dino_yellow;
+	background-color: $dino_ecru; /* ecru */
+	font-style: normal;
+	font-family: helvetica, arial, sans-serif;
+}
+
+/*****************************/
+/* 2. Header                 */
+/*****************************/	
+
+/* This sprite file which will be used for all images */
+.photo {
+	display: block;
+
+	background-image: url(cc_sprite.png);
+	background-repeat: no-repeat;
+
+	float: left;
+	text-indent: -9999px;
+}
+
+header {
+	background: $dino_green;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+
+/*****************************/	
+/* 3. DinoLab banner         */
+/*****************************/
+
+$dino_green: rgba(80,89,58,1);
+$dino_yellow: rgba(255,194,15,1);
+$dino_font: rainforest, arial, sans-serif;
+
+/* Using cc_sprite.png defined in 2. Header */
+.l1 {
+	background-position: -1025px -340px;
+	width: 150px;
+	height: 150px;
+}
+
+#logobanner {
+	width: 940px;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.logo {
+	float: left;
+	width: 220px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+.banner {
+	float: left;
+	width: 700px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.banner h1 {
+	font-size: 150px;
+	font-family: rainforest, arial, sans-serif;
+	margin-bottom: 0px;
+}
+
+/*****************************/	
+/* 4. Navigation             */
+/*****************************/	
+
+#navlinks {
+	margin-top: 0px;
+	padding-left: 25px;
+	background: $dino_yellow;
+	padding-top: 0px;
+	font-size: 25px;
+	line-height: 35px;
+
+	font-family: $dino_font;
+}
+
+#navlinks li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+#navlinks a {
+	color: $dino_green;
+	text-decoration: none;
+
+	-webkit-transition: all 0.5s;
+
+	transition: all 0.5s;
+}
+
+#navlinks a:hover {
+	text-decoration: underline;
+
+	background: $dino_green;
+	color: $dino_yellow;
+	border: 4px solid $dino_green;
+	border-bottom: 4px solid $dino_green;
+}
+
+#navlinks a:active{
+	text-decoration: underline;
+}
+
+#navlinks li .selected {
+	background: $dino_green;
+	color: $dino_yellow;
+	border: 4px solid $dino_green;
+	border-bottom: 4px solid $dino_green;
+}
+
+/*****************************/	
+/* 5. Centre of the page     */
+/* Includes middle & sidebar */
+/*****************************/	
+
+#centre {
+	background: $dino_green;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-height: 620px;
+}
+
+#middle {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+}
+
+/*****************************/	
+/* 6. Footer                 */
+/*****************************/
+
+.bottom {
+	color: $dino_green;
+	background-color: $dino_yellow;
+	font-weight: bold;
+
+	height: 40px;
+	line-height: 40px;
+
+	margin-bottom: 10px;
+}
+
+.bottom_left {
+	float: left;
+	padding-left: 10px;
+}
+
+.bottom_right {
+	float: right;
+}
+
+.bottom a {
+	color: $dino_green;
+	text-decoration: underline;
+}
+
+.fbook {
+	float: right;
+
+	background-image: url(fb.png);
+	background-repeat: no-repeat;
+
+	position: relative;
+	right: -25px;
+	top: 5px;
+
+	text-indent: -9999px;
+}
+
+.twitter {
+	float: right;
+
+	background-image: url(twitter.png);
+	background-repeat: no-repeat;
+
+	position: relative;
+	right: -50px;
+	top: 5px;
+
+	text-indent: -9999px;
+}
+
+/*****************************/	
+/* 8. Jaw photos sidebar     */
+/*****************************/	
+
+#sidebar {
+	float: right;
+	margin-right: 0px;
+}
+
+/* Using cc_sprite.png defined in application.css */
+
+.p7 {
+	background-position: -600px 0px;
+	width: 220px;
+	height: 620px;
+}

@@ -1,0 +1,59 @@
+// Place all the styles related to the Links controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*****************************/	
+/* 13. Links                 */
+/*****************************/	
+
+.links {
+	padding-left: 20px;
+}
+
+.links h1 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.links h2 {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.links h3 {
+	background-color: rgba(255,194,15,1);
+	color: rgba(248,244,228,1);
+	height: 30px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.links a {
+	color: rgba(248,244,228,1);
+}
+
+.links p{
+	margin-bottom: 10px;
+}
+
+.link1, .num,  {
+	float: left;
+}
+
+.links .num {
+	width: 40px;
+	line-height: 40px;
+	text-align: right;
+	padding-right: 10px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.links .link-text {
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+}
+

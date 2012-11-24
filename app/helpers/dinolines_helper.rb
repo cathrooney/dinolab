@@ -1,0 +1,2 @@
+module DinolinesHelper
+end

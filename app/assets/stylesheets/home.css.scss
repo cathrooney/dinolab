@@ -1,0 +1,97 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*****************************/	
+/* 3. DinoLab banner         */
+/*****************************/
+
+$dino_green: rgba(80,89,58,1);
+$dino_yellow: rgba(255,194,15,1);
+$dino_font: rainforest, arial, sans-serif;
+
+/* Using cc_sprite.png defined in 2. Header */
+.l1 {
+	background-position: -1025px -340px;
+	width: 150px;
+	height: 150px;
+}
+
+#logobanner {
+	width: 940px;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.logo {
+	float: left;
+	width: 220px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+.banner {
+	float: left;
+	width: 700px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.banner h1 {
+	font-size: 150px;
+	font-family: rainforest, arial, sans-serif;
+	margin-bottom: 0px;
+}
+
+/*****************************/	
+/* 4. Navigation             */
+/*****************************/	
+
+#navlinks {
+	margin-top: 0px;
+	padding-left: 25px;
+	background: $dino_yellow;
+	padding-top: 0px;
+	font-size: 25px;
+	line-height: 35px;
+
+	font-family: $dino_font;
+}
+
+#navlinks li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+#navlinks a {
+	color: $dino_green;
+	text-decoration: none;
+
+	-webkit-transition: all 0.5s;
+
+	transition: all 0.5s;
+}
+
+#navlinks a:hover {
+	text-decoration: underline;
+
+	background: $dino_green;
+	color: $dino_yellow;
+	border: 4px solid $dino_green;
+	border-bottom: 4px solid $dino_green;
+}
+
+#navlinks a:active{
+	text-decoration: underline;
+}
+
+#navlinks li .selected {
+	background: $dino_green;
+	color: $dino_yellow;
+	border: 4px solid $dino_green;
+	border-bottom: 4px solid $dino_green;
+}

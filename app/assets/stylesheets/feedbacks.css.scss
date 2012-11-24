@@ -1,0 +1,143 @@
+// Place all the styles related to the Feedbacks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*****************************/	
+/* 12. Feedback              */
+/*****************************/	
+
+.feedback {
+	margin-left: 20px;
+}
+
+.feedback h2 {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.galleryItem {
+	float:left;
+	background-color: white;
+
+	border: 2px solid gray;
+
+	width: 17%;
+	margin:  1% 1% 1% 1%;
+}
+
+.galleryItem img {
+	max-width: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.galleryImage {
+	float: left;	
+ 
+	width: 80%;
+	margin: 10% 10%;
+}
+ 
+.galleryDesc {
+	float: left;
+
+	border-top: 2px solid gray;
+	background-color: #F2F0F1;
+
+	max-height: 20px;
+	overflow: hidden;
+}
+
+.galleryDesc h3 {
+	color: gray;
+	font-size: 10px;
+	max-width: 90%;
+	line-height: 20px;
+
+	padding: 0px 5%;
+}
+ 
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top: 0px;
+   	margin: 0 auto;
+
+   	width: 960px;
+   	height: 100%;
+	background: rgba(0,0,0,.5);
+    text-align:center;
+}
+
+#lightbox p {
+	color:#fff;
+    font-size:12px;
+    padding-bottom: 5px;
+}
+
+#lightbox span {
+	color:#fff; 
+    font-size:12px;
+}
+
+#lightbox .lb_bottom {
+	width: 470px;
+	margin: 0 auto;
+	padding: 10px 0px;
+}
+
+#lightbox .lb_title {
+	float: left;
+}
+
+#lightbox .lb_copy {
+	float: right;
+}
+
+#lightbox img {
+	width: 50%;
+	height: 80%;
+
+	margin-top: 20px;
+
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#lightbox .slideshow {
+	width: 470px;
+	margin: 0 auto;
+	padding: 10px 0px;
+}
+
+.slideshow .prev_next {
+	width: 30%;
+	float:left;
+	text-align: left;
+}
+
+.slideshow .image_pos {
+	width: 50%;
+	float:left;
+	text-align: center;
+}
+
+.previous, .next {
+	text-decoration: underline;
+	padding: 0px 5px;
+}
+
+.slideshow .close{
+	width: 20%;
+	float:right;
+	text-align: right;
+}
+
+.slideshow a {
+	color:#fff; 
+    font-size:12px;
+
+	text-decoration: underline;
+}

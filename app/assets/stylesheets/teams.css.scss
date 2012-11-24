@@ -1,0 +1,48 @@
+// Place all the styles related to the Teams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Using cc_sprite.png defined in 2. Header */
+
+.b1 {
+	background-position: -820px 0px;
+	width: 205px;
+	height: 542px;
+}
+
+.b2 {
+	background-position: -1025px 0px;
+	width: 211px;
+	height: 170px;
+}
+
+.b3 {
+	background-position: -1025px -170px;
+	width: 211px;
+	height: 170px;
+}
+
+.scott, .sue, .sarah {
+	float: left;
+	padding: 0px 0px 20px 20px;
+}
+
+.scott-bio, .sue-bio, .sarah-bio {
+	float: left;
+	padding-right: 10px;
+	padding-left: 5px;
+}
+
+.bios h3 {
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px;
+}
+
+.scott-bio p {
+	padding-bottom: 10px;
+	line-height: 120%;
+}
+
+.sue-bio, .sarah-bio p {
+	line-height: 120%;
+}

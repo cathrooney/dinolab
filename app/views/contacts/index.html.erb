@@ -1,0 +1,45 @@
+<div class="contact grid_9 alpha omega">
+<p class="c">
+  If you wish to contact us about availability and pricing, please telephone 07842927853, or use the contact form below and we will get back to you as soon as possible.
+</p>
+
+<form action="submit.html" method="post">
+  
+  <div class="contact-form grid_4 alpha omega">
+    <p class="e">
+      <label for="username">Your Name:</label> <!-- problem with this line - for attribute -->
+      <input type="text" id="username" name="username" maxlength="40" size="40" />
+    </p>
+
+    <p class="e">
+      <label class="z">Your E-mail Address *</label> <input type="text" name="email" size="40" placeholder="example@ex.com"/>
+    </p>
+
+    <p class="e">
+      <label class="z">Phone Number *</label> <input type="text" name="phone" size="40" placeholder="Phone number with full area code"/>
+    </p>
+  </div>
+
+  <div class="contact-comments grid_4 push_1">
+    <p class="e">
+    <label class="z">Your Comments:</label> <textarea name="message" class="z" cols="2" rows="6"></textarea>
+    </p>
+  </div>
+
+  <div class="contact-pref grid_9 alpha omega">
+    <label class="e z">Contact Preference:</label>
+    <input type="radio" name="contact-pref" value="phone" checked="checked" />phone
+    <input type="radio" name="contact-pref" value="email" />e-mail <!-- need a break here? -->
+  <div class="clear"> </div>
+
+    <input type="submit" value="Submit" />
+  </div>
+<div class="clear"> </div>
+
+</form>
+
+<p class="d">* You must provide either your e-mail address or a contact phone number.</p>
+
+<div class="clear"> </div>
+
+</div> <!-- Close the contact overview -->

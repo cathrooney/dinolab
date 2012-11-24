@@ -1,0 +1,102 @@
+// Place all the styles related to the Bookings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$dino_green: rgba(80,89,58,1);
+$dino_yellow: rgba(255,194,15,1);
+$dino_ecru: rgba(248,244,228,1);
+
+.event_selection, .message, .event_amount {
+	float:left;
+	padding: 10px;
+}
+
+.box1, .shopping, .payment {
+	color: $dino_green;
+	background-color: $dino_ecru;
+
+	margin: 10px -10px 10px 10px;
+}
+
+.payment input[type="submit"] {
+	float: right;
+
+	background-color: $dino_yellow;
+	color: $dino_ecru;
+	border: 0px;
+
+	font-weight: bold;
+}
+
+.shopping {
+	padding: 10px;
+}
+
+.item_one, .item_two, .shopping_item, .quantity {
+	float: left;
+	font-size: 15px;
+}
+
+.item_one, .item_two {
+	padding-top: 5px;
+}
+.number {
+	float: left;
+
+	font-size: 16px;
+}
+
+.qone, .qtwo {
+	float: left;
+}
+
+.arrows {
+	width: 100px;
+}
+
+.up, .down {
+	float: left;
+	width: 50px;
+
+	font-size: 8px;
+}
+
+.up a {
+	text-decoration: none;
+}
+
+.down a {
+	text-decoration: none;
+}
+
+.payment {
+	float: left;
+	width: 700px;
+
+	font-size: 16px;
+
+	padding-top: 10px;
+}
+
+.ways_to_pay {
+	float: left;
+
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.final_total_amount {
+	float: left;
+
+	text-align: right;
+	padding-bottom: 10px;
+}
+
+.amount {
+	font-size: 15px;
+	text-align: right;
+}
+
+.vat_amount {
+	font-size: 10px;
+}

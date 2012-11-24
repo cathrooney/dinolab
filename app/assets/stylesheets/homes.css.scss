@@ -1,0 +1,77 @@
+// Place all the styles related to the Homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.inspire h2 {
+	text-align: center;
+	font-family: rainforest, arial, sans-serif;
+	font-size: 30px;
+}
+
+.dldesc {
+	text-align: justify;
+	padding: 5px 10px
+}
+
+.visit {
+	text-align: center;
+	font-size: 15px;
+}
+
+.inspire {
+	padding:10px;
+	font-size: 20px;
+	height: 20px;
+}
+
+.mid-photos {
+	margin: 0px 20px;
+}
+
+.end-photos {
+	margin: 10px 80px;
+}
+
+.p1, .p2, .p3 {
+	width: 200px;
+	height: 200px;
+
+	margin: 0px 10px;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6, .b1, .b2, .b3 {
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Using cc_sprite.png defined in 2. Header */
+
+.p1 {
+	background-position: 0px 0px;
+}
+
+.p2 {
+	background-position: -200px 0px;
+}
+
+.p3 {
+	background-position: -400px 0px;
+}
+
+.p4 {
+	background-position: 0px -200px;
+	width: 250px;
+	height: 170px;
+
+	margin: 0px 10px;
+}
+
+.p5 {
+	background-position: -250px -200px;
+	width: 250px;
+	height: 170px;
+
+	margin: 0px 10px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	  <link rel="shortcut icon" href="favicon.ico">
+
+	  <title>Feedback - The DinoLab</title>
+	  <meta name="description" content="DinoLab is run by Scott &amp; Sue Moore-Fay and based in Sevenoaks">
+
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+
+	<body>
+
+	  <header class="grid_12">
+
+	    <div id="logobanner" class="grid_12">
+	      <div class="logo grid_3 alpha omega">
+	        <a class="photo l1"></a>
+	        <div class="clear"> </div>
+	      </div>
+	      <div class="banner grid_9 alpha omega">
+	        <h1>The DinoLab</h1>
+	      </div>
+	    </div> <!-- Close logo banner -->
+
+	    <div class="clear"> </div>
+
+	    <nav id="navlinks">
+	      <ul>
+	        <li> <%= link_to "Home", homes_path %> </li>
+	        <li> <%= link_to "Schools", schools_path %> </li>
+	        <li> <%= link_to "Parties", parties_path %> </li>
+	        <li> <%= link_to "Team", teams_path %> </li>
+	        <li> <%= link_to "Feedback", feedbacks_path %> </li>
+	        <li> <%= link_to "Links", links_path %> </li>
+	        <li> <%= link_to "Contact", contacts_path %> </li>
+	        <li> <%= link_to "Booking", bookings_path %> </li>
+	        <li> <%= link_to "Dinoline", dinolines_path %> </li>
+	        <li> <%= link_to "FAQs", faqs_path %> </li>
+	      </ul>
+	    </nav> <!-- Closing the navigation links -->
+
+		</header>
+	    <div id="wrapper" class="container_12">
+
+		    <div id="centre" class="grid_12">
+
+		        <div id="middle" class="grid_9">
+
+							<%= yield %>
+
+		        </div> <!-- Closing the middle of the page -->
+
+	        <div id="sidebar" class="grid_3">
+	          <div>
+	            <a class="photo p7"></a>
+	            <div class="clear"> </div>
+	          </div>
+	          <div class="clear"> </div>
+	        </div> <!-- Closing the sidebar -->
+
+	      </div> <!-- Closing the centre section -->
+
+	      <footer>
+	        <div class="bottom grid_12">
+	        
+	          <div class="bottom_left grid_10 alpha omega">
+	            Contact us by <a href="mailto:enquiry@thedinolab.co.uk" target="_blank">e-mail</a> or telephone 07842 927 853
+	          </div>
+
+	          <div class="bottom_right grid_ alpha omega">
+	            <a href="http://www.facebook.com/cath.rooney" target="_blank" class="fbook grid_1 alpha omega">FB</a>
+	            <a href="https://twitter.com/cathrooney" target="_blank" class="twitter grid_1 alpha omega">TW</a>
+	          </div>
+	        </div>
+
+	      </footer>
+	    </div> <!-- Closing the wrapper -->
+
+		</body>
+
+	<% if flash[:alert] %>
+		<div id="alert"><%= flash[:alert] %></div>
+	<% end %>
+
+	<% if flash[:error] %>
+		<div id="error"><%= flash[:error] %></div>
+	<% end %>
+
+</html>

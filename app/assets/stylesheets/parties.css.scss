@@ -1,0 +1,28 @@
+// Place all the styles related to the Parties controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Using cc_sprite.png defined in 2. Header */
+
+.p6 {
+	background-position: 0px -370px;
+	width: 500px;
+	height: 220px;
+}
+
+.u {
+	text-decoration: underline;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0px;
+}
+
+.parties .b {
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0px 5px 20px;
+}
+
+.trex {
+	padding: 10px 100px;
+}

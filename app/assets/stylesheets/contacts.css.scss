@@ -1,0 +1,64 @@
+// Place all the styles related to the Contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$submit_pixels: 2px 2px 2px 2px;
+
+.contact, .submitted {
+	margin-left: 15px;
+}
+
+.contact .c {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.contact-form, .contact-comments, .contact-pref {
+	float: left;
+}
+
+.contact .d {
+	margin-top: 10px;
+}
+
+.contact .e {
+	margin-bottom: 10px;
+}
+
+.contact .z {
+	margin-top: 10px;
+	width: 300px;
+	padding-bottom: 10px;
+}
+
+.contact-pref input[type="radio"] {
+	margin-bottom: 10px;
+}
+
+.contact .submit {
+	background-color: rgba(255,194,15,1);
+	border: 1px solid rgba(255,194,15,1);
+
+	color: rgba(80,89,58,1);
+	font-weight: bold;
+	font-size: 20px;
+
+	width: 100px;
+	height: 30px;
+
+	margin-top: 10px;
+
+	-o-border-radius: submit_pixels;
+	-moz-border-radius: submit_pixels;
+	-webkit-border-radius: submit_pixels;
+	border-radius: submit_pixels;
+
+	-webkit-appearance: none;
+}
+
+.submitted p a:visited, a {
+	color: rgba(255,194,15,1);
+}
+
+
+
