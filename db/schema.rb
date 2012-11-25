@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121118164312) do
+ActiveRecord::Schema.define(:version => 20121125204313) do
+
+  create_table "forums", :force => true do |t|
+    t.string   "name"
+    t.text     "comment"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "lists", :force => true do |t|
     t.integer  "user_id"
@@ -27,8 +34,9 @@ ActiveRecord::Schema.define(:version => 20121118164312) do
     t.string   "name"
     t.string   "url"
     t.string   "link"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "avatar_file_name"
   end
 
 end

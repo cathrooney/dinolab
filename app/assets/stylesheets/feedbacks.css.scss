@@ -6,6 +6,30 @@
 /* 12. Feedback              */
 /*****************************/	
 
+$dino_green: rgba(80,89,58,1);
+$dino_yellow: rgba(255,194,15,1);
+
+.logout {
+	float: right;
+	margin-top: 10px;
+}
+
+.forum_link {
+	margin-top: 10px;
+	float: left;
+}
+
+.signin {
+	margin-bottom: 20px;
+	padding: 10px;
+	color: $dino_green;
+	background-color: $dino_yellow;
+}
+
+.signin a {
+	color: $dino_green;
+}
+
 .feedback {
 	margin-left: 20px;
 }

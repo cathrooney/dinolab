@@ -1,10 +1,10 @@
 Dino::Application.routes.draw do
 
-  get "homes/index"
+  resources :forums
 
-  get "faqs/index"
 
   get "lists/index"
+  get "users/index"
 
   resources :users, only: [:show, :new, :create, :edit, :update]
   resources :home
@@ -18,12 +18,14 @@ Dino::Application.routes.draw do
   resources :dinolines
   resources :faqs
   resources :homes
+  resources :sessions
 #  resource :account, only: [:edit, :update]
-  resources :lists, except: [:show]
+#  resources :lists, except: [:show]
+  resources :forums, except: [:show]
 #  resources :contacts, only: [:new, :create, :edit, :update, :destroy]
   resource :sessions, only: [:new, :create, :destroy]
 
-  root to: "homes#index"
+  root to: "feedbacks#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

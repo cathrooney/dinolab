@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   		session[:user_id] = @user.id
 
   		flash[:alert] = "You've signed up!"
-  		redirect_to root_path
+  		redirect_to "/feedbacks"
   	else
   		render "new"
   	end
