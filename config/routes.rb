@@ -1,5 +1,15 @@
 Dino::Application.routes.draw do
 
+  get "forums/_form"
+
+  get "forums/edit"
+
+  get "forums/index"
+
+  get "forums/new"
+
+  get "forums/show"
+
   resources :forums
 
 
