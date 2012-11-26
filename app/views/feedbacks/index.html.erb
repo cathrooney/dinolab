@@ -7,8 +7,15 @@
       </p>
     <div>
       <p class="forum_link">
-        <%= link_to "View St Mary's School Forum", forums_path %>
+        St Mary's School Forum
       </p>
+
+      <% if current_user.username == "cathsundaynight" %>
+        <p>I have full admin rights</p>
+
+      <% else %>
+        <p>I am here to make a comment</p>
+      <% end %>
 
       <p class="logout">
         <%= link_to "Log out", sessions_path, method: :delete %>

@@ -1,22 +1,10 @@
 Dino::Application.routes.draw do
 
-  get "forums/_form"
-
-  get "forums/edit"
-
-  get "forums/index"
-
-  get "forums/new"
-
-  get "forums/show"
-
-  resources :forums
-
-
   get "lists/index"
   get "users/index"
 
   resources :users, only: [:show, :new, :create, :edit, :update]
+  resources :lists, only: [:show, :new, :create, :edit, :update]
   resources :home
   resources :schools
   resources :parties
@@ -30,8 +18,6 @@ Dino::Application.routes.draw do
   resources :homes
   resources :sessions
 #  resource :account, only: [:edit, :update]
-#  resources :lists, except: [:show]
-  resources :forums, except: [:show]
 #  resources :contacts, only: [:new, :create, :edit, :update, :destroy]
   resource :sessions, only: [:new, :create, :destroy]
 
