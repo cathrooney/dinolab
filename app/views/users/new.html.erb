@@ -6,10 +6,6 @@
 	<%= f.input :email %>
 	<%= f.input :password %>
 	<%= f.input :password_confirmation %>
-
-	<%= form_for @user, :url => users_path, :html => { :multipart => true } do |form| %>
-	  <%= form.file_field :avatar %>
-	<% end %>
-
+	<%= f.input :avatar %>
 	<%= f.button :submit, "Sign up" %>
 <% end %>
